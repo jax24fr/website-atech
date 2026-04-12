@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nos Projets | A/TECH - Agencement Commercial & Tertiaire</title>
+<meta name="description" content="Découvrez les réalisations A/TECH : boutiques, agences bancaires, sièges sociaux, espaces tertiaires. Galerie de nos projets d'agencement sur-mesure."/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:title" content="Nos Projets | A/TECH"/>
+<meta property="og:description" content="Galerie de nos réalisations en agencement commercial et tertiaire."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="fr_FR"/>
+<link rel="canonical" href="https://atech-agencement.fr/projets.html"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#0b2a1c",
+        "primary-container": "#224031",
+        "on-primary": "#ffffff",
+        "primary-fixed": "#c8ebd5",
+        "primary-fixed-dim": "#adceba",
+        "secondary": "#506169",
+        "secondary-container": "#d1e2ec",
+        "secondary-fixed": "#d4e5ef",
+        "on-secondary": "#ffffff",
+        "on-secondary-container": "#55656d",
+        "surface": "#f4faff",
+        "surface-bright": "#f4faff",
+        "surface-dim": "#cfdce4",
+        "surface-container": "#e3f0f8",
+        "surface-container-low": "#e9f6fd",
+        "surface-container-high": "#ddeaf2",
+        "surface-container-highest": "#d7e4ec",
+        "surface-container-lowest": "#ffffff",
+        "on-surface": "#111d23",
+        "on-surface-variant": "#424844",
+        "on-background": "#111d23",
+        "background": "#f4faff",
+        "outline": "#727973",
+        "outline-variant": "#c2c8c2",
+        "inverse-surface": "#263238"
+      },
+      borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+      fontFamily: { headline: ["Manrope"], body: ["Work Sans"], label: ["Work Sans"] }
+    }
+  }
+}
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  html { scroll-behavior: smooth; }
+  .filter-btn.active { background-color: #0b2a1c; color: #ffffff; }
+  .project-card { transition: opacity 0.4s, transform 0.4s; }
+  .project-card.hidden-card { opacity: 0; transform: scale(0.95); position: absolute; pointer-events: none; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-primary">
+
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md">
+  <div class="flex justify-between items-center w-full px-6 md:px-12 py-5 max-w-[1440px] mx-auto">
+    <a href="index.html" class="text-2xl font-black tracking-tighter text-primary font-headline">A/TECH</a>
+    <nav class="hidden md:flex gap-10">
+      <a class="text-secondary font-medium font-headline tracking-tight hover:text-primary transition-colors duration-300" href="index.html#expertise">Expertise</a>
+      <a class="text-primary border-b-2 border-primary pb-1 font-headline font-bold tracking-tight" href="projets.html">Projets</a>
+      <a class="text-secondary font-medium font-headline tracking-tight hover:text-primary transition-colors duration-300" href="index.html#engagements">Engagements</a>
+      <a class="text-secondary font-medium font-headline tracking-tight hover:text-primary transition-colors duration-300" href="index.html#a-propos">À Propos</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="index.html#contact" class="hidden md:inline-block bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-3 text-sm font-bold tracking-tight rounded-sm hover:opacity-90 transition-all uppercase font-headline">Contactez-nous</a>
+      <button id="burger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Ouvrir le menu">
+        <span class="block w-6 h-0.5 bg-primary transition-all" id="burger-top"></span>
+        <span class="block w-6 h-0.5 bg-primary transition-all" id="burger-mid"></span>
+        <span class="block w-6 h-0.5 bg-primary transition-all" id="burger-bot"></span>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-outline-variant/20">
+    <nav class="flex flex-col px-6 py-6 gap-6">
+      <a class="text-primary font-headline font-bold text-lg" href="index.html#expertise">Expertise</a>
+      <a class="text-primary font-headline font-bold text-lg" href="projets.html">Projets</a>
+      <a class="text-primary font-headline font-bold text-lg" href="index.html#engagements">Engagements</a>
+      <a class="text-primary font-headline font-bold text-lg" href="index.html#a-propos">À Propos</a>
+      <a href="index.html#contact" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-3 text-sm font-bold tracking-tight rounded-sm text-center uppercase font-headline">Contactez-nous</a>
+    </nav>
+  </div>
+  <div class="bg-surface-container-low h-[2px]"></div>
+</header>
+
+<main class="pt-24">
+
+<!-- Hero page -->
+<section class="py-20 bg-primary">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+    <span class="text-primary-fixed font-headline font-bold uppercase tracking-widest text-sm block mb-4">Portfolio</span>
+    <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white tracking-tighter mb-6">Nos Réalisations</h1>
+    <p class="text-primary-fixed text-xl max-w-2xl font-light leading-relaxed">Chaque projet est une réponse unique aux besoins de nos clients. Découvrez nos interventions en agencement commercial, tertiaire et sur-mesure.</p>
+  </div>
+</section>
+
+<!-- Filtres -->
+<section class="py-8 bg-surface sticky top-[73px] z-40 border-b border-outline-variant/20">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+    <div class="flex flex-wrap gap-3">
+      <button class="filter-btn active px-5 py-2.5 rounded-sm font-headline font-bold text-sm uppercase tracking-wider transition-all bg-primary text-white" data-filter="all">Tous</button>
+      <button class="filter-btn px-5 py-2.5 rounded-sm font-headline font-bold text-sm uppercase tracking-wider transition-all bg-surface-container-high text-primary hover:bg-primary hover:text-white" data-filter="boutique">Boutique & Retail</button>
+      <button class="filter-btn px-5 py-2.5 rounded-sm font-headline font-bold text-sm uppercase tracking-wider transition-all bg-surface-container-high text-primary hover:bg-primary hover:text-white" data-filter="agence">Agences</button>
+      <button class="filter-btn px-5 py-2.5 rounded-sm font-headline font-bold text-sm uppercase tracking-wider transition-all bg-surface-container-high text-primary hover:bg-primary hover:text-white" data-filter="tertiaire">Tertiaire</button>
+      <button class="filter-btn px-5 py-2.5 rounded-sm font-headline font-bold text-sm uppercase tracking-wider transition-all bg-surface-container-high text-primary hover:bg-primary hover:text-white" data-filter="renovation">Rénovation</button>
+    </div>
+  </div>
+</section>
+
+<!-- Grille de projets -->
+<section class="py-16 bg-surface">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Projet 1 -->
+      <div class="project-card group" data-category="boutique">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm relative">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Concept Store Luxury à Paris - agencement haut de gamme par A/TECH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZM7lw1Yt5T7fhLfIB9gxgxMvDXsMCwik8fqn5LelaxhyjU6GplxiBoZg8U1h4xXJFnEV0FqSkPfE2dmLh0wObCVSjHPKLNcLJlOamtrDXQS_GLJ6VnOXNkbKlNuH6y8V2Jh5RfprNkh02WuKxeDk_g1bE2fzEInCQUgdnnbz7COCOpPcsAg8IqxnzYDAJM-f97pTWO07OaOQ4uiY6D4v137nr14CP16WdhBeFwjvuLixpsvCP3BSEXUtYLB-14EamSH_u7aibzJ4"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="mt-5">
+          <span class="text-secondary text-xs font-headline font-bold uppercase tracking-widest">Boutique</span>
+          <h3 class="text-xl font-headline font-extrabold text-primary mt-1">Concept Store Luxury</h3>
+          <p class="text-secondary text-sm mt-2">Agencement complet d'un concept store haut de gamme à Paris. Mobilier sur-mesure en bois sombre, éclairage scénographique et signalétique intégrée.</p>
+          <div class="flex gap-4 mt-4 text-xs text-secondary font-headline font-bold uppercase tracking-wider">
+            <span>Paris</span>
+            <span>·</span>
+            <span>280 m²</span>
+            <span>·</span>
+            <span>2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 2 -->
+      <div class="project-card group" data-category="tertiaire">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm relative">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Showroom digital pour siège social - agencement tertiaire par A/TECH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKGiszddU51S5SD5H0IVV0ewmjuUo_S986ccsJjFZEnfkZX5lGqAhUCsrM7m5mum7nvT3CcJKfVULwJexlDCNZlvCFOiv_MBZyX3g0L7aaBd_Z5kYGxaANn-VT90_9SWSBjMCT1TZsqZ6gJFg5L_onQ-MJBHrYRFxiWADyut6qr92gx7CgY03C7pe0oyojcE8VU-Lr0Di1q72YWFh_KbAoeKqMB3ts5h9lNIVOED2Po0VSO4P_pjGeZJUvYe7NlgnDkvNHBxeh0KU"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="mt-5">
+          <span class="text-secondary text-xs font-headline font-bold uppercase tracking-widest">Tertiaire</span>
+          <h3 class="text-xl font-headline font-extrabold text-primary mt-1">Showroom Digital</h3>
+          <p class="text-secondary text-sm mt-2">Création d'un espace d'accueil et de présentation pour un siège social. Comptoir sculptural, finitions premium et intégration technologique.</p>
+          <div class="flex gap-4 mt-4 text-xs text-secondary font-headline font-bold uppercase tracking-wider">
+            <span>Lille</span>
+            <span>·</span>
+            <span>450 m²</span>
+            <span>·</span>
+            <span>2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3 -->
+      <div class="project-card group" data-category="agence">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm relative">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Réseau d'agences bancaires - agencement agence par A/TECH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOGJY0I0c8r-52AYFH7FO7KQA4zvHdcbt6HuJWmCA6tntw-ZQyrPTAUPninndBXpV7nyZkMy16Zb5bYGymZnr58gO7T6XA3axwNZOsDO8x_yyThhVAR4LPDj-I7SixnCMa2Bw15HzHEzqzCqc4Mej-cs_5my5P_b9atf_o1KdmkdO0iQh-jrj2R9CIO3oX6zDu1Kf1ARS0nPEIWyQDND14-V1HAjkme8bTQ7km5JQPuVblxj_yCa3SmQls_JOqwoLRedhdgdWpm1Q"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="mt-5">
+          <span class="text-secondary text-xs font-headline font-bold uppercase tracking-widest">Agence</span>
+          <h3 class="text-xl font-headline font-extrabold text-primary mt-1">Réseau d'Agences Bancaires</h3>
+          <p class="text-secondary text-sm mt-2">Déploiement d'un nouveau concept d'agence sur 12 sites. Mobilier modulaire, zones d'accueil repensées et espaces conseil privatifs.</p>
+          <div class="flex gap-4 mt-4 text-xs text-secondary font-headline font-bold uppercase tracking-wider">
+            <span>National</span>
+            <span>·</span>
+            <span>12 sites</span>
+            <span>·</span>
+            <span>2023-2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 4 -->
+      <div class="project-card group" data-category="boutique">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm relative">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Boutique optique avec mobilier sur-mesure par A/TECH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRLXktxoCRUoJCV4Ylwnh8AxpdzkqQyy3XbKhpNkFMRW73Vivv1TaXQ05Ih9yGUbw17carGE6VJVIu79pGZnBqEwgLXR7ZGVJGgpXc1iQ1GrUBte0I32SRTP0GEb0wKlB_cxBLLI3a7cMuRs0pnFcQh4JWzEz6Rq8Ua53CZ4JRJm7nbcUgiYEK6Bn7VDXuqxluMpF1ArbWjBlZoPa2kiJkCrNYILjU4oHnWM7O-yIfGspkpJtBTcEApFzE0fBQ_uAGPU1jj9vTl2o"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="mt-5">
+          <span class="text-secondary text-xs font-headline font-bold uppercase tracking-widest">Boutique</span>
+          <h3 class="text-xl font-headline font-extrabold text-primary mt-1">Enseigne d'Optique Premium</h3>
+          <p class="text-secondary text-sm mt-2">Agencement d'une boutique d'optique avec présentoirs rétro-éclairés, comptoir de vente et espace examen. Finitions bois clair et laiton brossé.</p>
+          <div class="flex gap-4 mt-4 text-xs text-secondary font-headline font-bold uppercase tracking-wider">
+            <span>Lyon</span>
+            <span>·</span>
+            <span>120 m²</span>
+            <span>·</span>
+            <span>2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 5 -->
+      <div class="project-card group" data-category="renovation">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm relative">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Rénovation complète d'espace commercial par A/TECH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8T0mJaOdqnZUg-C39cXo5PpWh9oxjG_TIc8zVk3M2o3WLeQtSKzq5yL46Mz8W5sShDLqgJ1dcYvb0VyxmFOlOFthRmfWfTOGCuGMp9smT1q9VLWo3RpONh4kjpE5sQbEF015iFoc6eLU_mmsw07lOXW80JY8B2c4G3_aP2Ck4I57jC2biZGynikWulJafiqPlteOXbv_wtd1-rkDu4nesZ6QXWjTXlZdzLAQxBU3_dBHxmaeS6-9Rx-obEQOXQAtRoRuBeVMvqWM"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="mt-5">
+          <span class="text-secondary text-xs font-headline font-bold uppercase tracking-widest">Rénovation</span>
+          <h3 class="text-xl font-headline font-extrabold text-primary mt-1">Centre Commercial — Restructuration</h3>
+          <p class="text-secondary text-sm mt-2">Rénovation intégrale de 6 cellules commerciales. Remise aux normes électriques, CVC, cloisonnement et finitions complètes.</p>
+          <div class="flex gap-4 mt-4 text-xs text-secondary font-headline font-bold uppercase tracking-wider">
+            <span>Roubaix</span>
+            <span>·</span>
+            <span>1 200 m²</span>
+            <span>·</span>
+            <span>2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 6 -->
+      <div class="project-card group" data-category="agence">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm relative">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Agence immobilière avec agencement moderne par A/TECH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQtF1TaM_zNokZt-sLwGXefeadKPMFeGk4jdchnPJkvrp2EMoy7u50eaCAyEI4AIuvX0Ly_MJbJ_frbvJqX_6t0KA_Zk1wvyx2CB2oLuuJvHoXfc4muU5tTUt8mKLbWGRa3Io3DhV-D5erxo-7126OlEmqTE7p4FzWIe2WLP-_ZomCSqMewBNsSN3ZQ54jpgN-Doep5FAZpligHYER59R9WGayzCHWPcLSMXuK7lpodhWLHJLQtry6yKfkpP4ijv9udG64ngUZpzM"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="mt-5">
+          <span class="text-secondary text-xs font-headline font-bold uppercase tracking-widest">Agence</span>
+          <h3 class="text-xl font-headline font-extrabold text-primary mt-1">Agence Immobilière — Concept Vitrine</h3>
+          <p class="text-secondary text-sm mt-2">Réaménagement complet d'une agence immobilière avec vitrine interactive, espace client convivial et bureaux semi-ouverts.</p>
+          <div class="flex gap-4 mt-4 text-xs text-secondary font-headline font-bold uppercase tracking-wider">
+            <span>Toulouse</span>
+            <span>·</span>
+            <span>95 m²</span>
+            <span>·</span>
+            <span>2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 7 -->
+      <div class="project-card group" data-category="tertiaire">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm relative">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Open space tertiaire aménagé par A/TECH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-hxYT-iLYlKcY81D4FwQj5l72uFk8DGpWku3OETZsS2YJUaXjSjPYf75OYKW6ZCeGjnTPFsg5MzC-VrMpOJVeWd9zF7AV6hZ8fG6g2bhi2HbGA1j0XvLZKgCAD-HoCB2rYkMIgcEKbq10iAIkGFUjDCwx3vJ0LhbcDGahzQu_6ZgfCm0GyjKSW-pRhpcY46k4sJwjxPkOJvh3EtTAeTqXgzAcQI7l-kFjFk_FK-l7yCJUXjVJpz9lrF_XgW9SpU21l_LyR2mA4VU"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="mt-5">
+          <span class="text-secondary text-xs font-headline font-bold uppercase tracking-widest">Tertiaire</span>
+          <h3 class="text-xl font-headline font-extrabold text-primary mt-1">Bureaux Open Space — Startup Tech</h3>
+          <p class="text-secondary text-sm mt-2">Aménagement de 800m² de bureaux collaboratifs. Cloisons acoustiques, salles de réunion vitrées, mobilier ergonomique et espaces détente.</p>
+          <div class="flex gap-4 mt-4 text-xs text-secondary font-headline font-bold uppercase tracking-wider">
+            <span>Lille</span>
+            <span>·</span>
+            <span>800 m²</span>
+            <span>·</span>
+            <span>2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 8 -->
+      <div class="project-card group" data-category="boutique">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm relative">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Réseau de boulangeries avec agencement standardisé par A/TECH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoq4Z9VLyU1fvoOYSvSBFSouP1zjH82lcCB2Gv7Sb-JLw5HYsyc1Sn3UDVrI319xnPZWv3yzLVriC0nPutFdwo2s2r6LSyCF0QvP05-cehgX_keUhbQ4ElmDTqezJsGZHpeGwv8VAyXhC9AYBEo1_Ib5GonYscdfZVF07ElavCC95p07WfR_GALrgE003emVYOcoXwrDOCwooIAx9DFLSG5Nff_oW4ilMm0_2jAe8sBdMveeodsyOt5VimtgMVJDad7Cq2V-fMVBc"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="mt-5">
+          <span class="text-secondary text-xs font-headline font-bold uppercase tracking-widest">Boutique</span>
+          <h3 class="text-xl font-headline font-extrabold text-primary mt-1">Réseau de Boulangeries Artisanales</h3>
+          <p class="text-secondary text-sm mt-2">Déploiement du concept d'enseigne sur 8 points de vente. Vitrines réfrigérées sur-mesure, comptoirs en pierre naturelle et habillage bois.</p>
+          <div class="flex gap-4 mt-4 text-xs text-secondary font-headline font-bold uppercase tracking-wider">
+            <span>Hauts-de-France</span>
+            <span>·</span>
+            <span>8 sites</span>
+            <span>·</span>
+            <span>2022-2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 9 -->
+      <div class="project-card group" data-category="renovation">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm relative">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Rénovation de pharmacie avec agencement sur-mesure par A/TECH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF6U-1a1DzSFOUGLzALBQFr8HxitvgDTZiqdEIg7T8SziTpANyDJgTyWwGTEdTiyAMUs8rvOstIWMC2rZeYGrm-nnAAygx9J_ADGaQtr8iTdATKZ5OtPhUhcjOglN1QHUsPrWhQPyKZ_wq_ECFXzYBWKH8DSOxx_zGs_OLnyK_uB60r1xMyi2SGpilWfe2nbMdhLKxWXAWvvVJcxndFXENt0dLb5S8BJRBZ4HmaYgTxy1m4TRLUop0j1QOhObskIP2CoYr84kVNsc"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="mt-5">
+          <span class="text-secondary text-xs font-headline font-bold uppercase tracking-widest">Rénovation</span>
+          <h3 class="text-xl font-headline font-extrabold text-primary mt-1">Pharmacie — Rénovation Totale</h3>
+          <p class="text-secondary text-sm mt-2">Rénovation complète d'une officine de 200m². Nouveau concept, optimisation du parcours client, linéaires sur-mesure et espace parapharmacie.</p>
+          <div class="flex gap-4 mt-4 text-xs text-secondary font-headline font-bold uppercase tracking-wider">
+            <span>Bordeaux</span>
+            <span>·</span>
+            <span>200 m²</span>
+            <span>·</span>
+            <span>2023</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 bg-primary">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12 text-center">
+    <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-white tracking-tight mb-6">Un projet similaire ?</h2>
+    <p class="text-primary-fixed text-xl max-w-2xl mx-auto mb-12 font-light">Parlons-en. Nous vous répondons sous 24h avec une première analyse de votre besoin.</p>
+    <a href="index.html#contact" class="inline-flex items-center gap-3 bg-white text-primary px-10 py-5 font-headline font-extrabold rounded-sm hover:bg-surface-bright transition-colors text-lg">
+      Démarrer un projet
+      <span class="material-symbols-outlined">arrow_forward</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-white w-full mt-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-6 md:px-12 py-20 w-full max-w-[1440px] mx-auto">
+    <div class="space-y-8">
+      <a href="index.html" class="text-xl font-bold text-white font-headline">A/TECH</a>
+      <p class="text-primary-fixed/60 max-w-sm font-body text-sm uppercase tracking-widest">
+        Expert en agencement commercial et réalisation technique. De la conception à la pose.
+      </p>
+      <p class="text-primary-fixed/60 font-body text-xs uppercase tracking-widest mt-12">
+        &copy; 2025 A/TECH. Tous droits réservés. SIREN : 880 197 694. Roubaix, France.
+      </p>
+    </div>
+    <div class="grid grid-cols-2 gap-8">
+      <div class="space-y-4">
+        <p class="font-headline font-bold text-xs uppercase tracking-[0.2em] text-primary-fixed/40">Navigation</p>
+        <nav class="flex flex-col gap-4">
+          <a class="text-primary-fixed/60 font-body text-sm uppercase tracking-widest hover:text-white transition-colors" href="index.html#expertise">Expertise</a>
+          <a class="text-primary-fixed/60 font-body text-sm uppercase tracking-widest hover:text-white transition-colors" href="projets.html">Réalisations</a>
+          <a class="text-primary-fixed/60 font-body text-sm uppercase tracking-widest hover:text-white transition-colors" href="index.html#a-propos">À Propos</a>
+        </nav>
+      </div>
+      <div class="space-y-4">
+        <p class="font-headline font-bold text-xs uppercase tracking-[0.2em] text-primary-fixed/40">Légal & Social</p>
+        <nav class="flex flex-col gap-4">
+          <a class="text-primary-fixed/60 font-body text-sm uppercase tracking-widest hover:text-white transition-colors" href="mentions-legales.html">Mentions Légales</a>
+          <a class="text-primary-fixed/60 font-body text-sm uppercase tracking-widest hover:text-white transition-colors" href="mentions-legales.html#confidentialite">Confidentialité</a>
+          <a class="text-primary-fixed/60 font-body text-sm uppercase tracking-widest hover:text-white transition-colors" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="text-primary-fixed/60 font-body text-sm uppercase tracking-widest hover:text-white transition-colors" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+// Mobile menu
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobile-menu');
+const burgerTop = document.getElementById('burger-top');
+const burgerMid = document.getElementById('burger-mid');
+const burgerBot = document.getElementById('burger-bot');
+let menuOpen = false;
+
+burger.addEventListener('click', () => {
+  menuOpen = !menuOpen;
+  mobileMenu.classList.toggle('hidden');
+  if (menuOpen) {
+    burgerTop.style.transform = 'rotate(45deg) translate(4px, 4px)';
+    burgerMid.style.opacity = '0';
+    burgerBot.style.transform = 'rotate(-45deg) translate(4px, -4px)';
+  } else {
+    burgerTop.style.transform = '';
+    burgerMid.style.opacity = '1';
+    burgerBot.style.transform = '';
+  }
+});
+
+// Filtres projets
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filter = btn.dataset.filter;
+
+    filterBtns.forEach(b => {
+      b.classList.remove('active', 'bg-primary', 'text-white');
+      b.classList.add('bg-surface-container-high', 'text-primary');
+    });
+    btn.classList.add('active', 'bg-primary', 'text-white');
+    btn.classList.remove('bg-surface-container-high', 'text-primary');
+
+    projectCards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.classList.remove('hidden-card');
+        card.style.display = '';
+      } else {
+        card.classList.add('hidden-card');
+        setTimeout(() => { card.style.display = 'none'; }, 400);
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>
