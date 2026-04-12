@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  atech-web:
+    image: nginx:alpine
+    container_name: atech-website
+    restart: unless-stopped
+
+    volumes:
+      - /data/atech-site/html:/usr/share/nginx/html:ro
+
+    networks:
+      - traefik-network
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-network"
+
+      # Router
+      - "traefik.http.routers.atech.rule=Host(`atech.jaxserv.ovh`)"
+      - "traefik.http.routers.atech.entrypoints=websecure"
+      - "traefik.http.routers.atech.tls=true"
+      - "traefik.http.routers.atech.tls.certresolver=letsencrypt"
+
+      # Service
+      - "traefik.http.routers.atech.service=atech-service"
+      - "traefik.http.services.atech-service.loadbalancer.server.port=80"
+
+networks:
+  traefik-network:
+    external: true
